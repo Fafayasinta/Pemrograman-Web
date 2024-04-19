@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+/****************************/
+/*        HEADER           */
+/****************************/
+.header{
+  background-color: darksalmon;
+  position:relative;
+  margin: 0;
+  padding: 0px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 20px;
+}
+
+.nav-list{
+margin: 0;
+display: flex;
+list-style: none;
+padding: 0;
+}
+
+.nav-list li{
+padding-left: 0;
+margin-right: 10px;
+}
+
+.nav-list li a{
+padding:10px;
+color:aliceblue;
+text-decoration: none;
+display: inline-block;
+}
+
+.nav-list li a:hover,
+.nav-list li a:active{
+color:black;
+transition: all 0.3s ease;
+}
+
+
+/****************************/
+/*         CONTENT          */
+/****************************/
+
+.home {
+  width: 100%; /* sama dgn 300px */
+  min-height: 100vh; /* sek */
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-bottom: 50px;
+}
+
+.home .box-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 80px;
+  align-items: center; /* agar simetris */
+  justify-content: space-between; 
+
+}
+
+.home .box-content .box:nth-child(1) h1{
+  color:indianred;
+  font-size: 3vw;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.home .box-content .box:nth-child(1) p{
+  line-height: 2;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.home .box-content .box img{
+  width: 390px;
+}
+
+
+.tombol-register{
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 24px; /* p dan l */
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: salmon;
+  transition: background-color 0.3s ease;
+}
+
+.tombol-register:hover {
+  background-color: #ff0044;
+  cursor: pointer;
+}
+
+/****************************/
+
+.membership{
+  width: 100%;
+  margin-bottom: 50px; /* jarak antar footer*/
+}
+
+.membership .box-membership{
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 15px;
+  margin: 24px;
+}
+
+.membership .box-membership .box{
+  width: 300px;
+  position: relative;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+  padding: 48px 24px 32px 24px;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 70px; /* jarak box*/
+  justify-content: space-between;
+}
+
+.membership .box-membership .box:hover{
+  background-color: rgb(234, 219, 219);
+  transition: background-color 0.3s ease;
+}
+
+.membership .box-membership .box li{ /* mengatur isi list membership*/
+  /* list-style-type:; */
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.membership .box-membership .box p{ /* mengatur harga*/
+  text-align: center;
+  color:aliceblue;
+  margin-top: 20px;
+  background-color: lightcoral;
+  border-radius: 10px;
+}
+
+.membership .heading-secondary{ /* mengatur judul membership*/
+  margin-bottom: 50px; /* jarak antar judul dan box*/
+  text-align: center;
+  color:indianred;
+  line-height: 1.3;
+}
+
+.membership .box-membership .box i{ /* mengatur icon*/
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/****************************/
+.contact{
+  width: 100%;
+  margin-bottom: 50px; /* jarak antar footer*/
+}
+
+.contact .box-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .heading-tertiary{ /* mengatur judul contact*/
+  margin-bottom: 60px; /* jarak antar judul dan box*/
+  text-align: center;
+  color:indianred;
+  line-height: 1.3;
+}
+
+.contact .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .box .image {
+    width: 15%; /* Sesuaikan lebar gambar */
+    margin-left: 200px;
+}
+
+.contact .box .image img {
+    width: 100%;
+    height: auto;
+}
+
+.contact .box .content {
+    width: 50%; /* Sesuaikan lebar teks */
+    margin-left: 50px; /* Memberikan jarak antara teks dan gambar */
+}
+
+.contact .box .content h3 {
+  margin-top: 0; /* Menghilangkan margin atas untuk h3 */
+  text-transform: none;
+  font-size: 17px;
+  text-align: left;
+}
+
+/****************************/
+
+.footer{
+  font-family:Verdana;
+  color:aliceblue;
+  height: 30px;
+  padding-inline-start: 5px;
+  background-color:darksalmon ;
+  clear: both;
+}
+
+
+/****************************/
